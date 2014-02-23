@@ -1,9 +1,9 @@
-@import "lib/normalise";
-@import "lib/forms";
-@import "lib/gradients";
+@import "lib/resets";
+@import "lib/form";
+@import "lib/gradient";
 @import "lib/print";
-@import "lib/queries";
-@import "lib/backgrounds";
+@import "lib/query";
+@import "lib/background";
 
 // to do: split mixins
 @import "lib/misc";
