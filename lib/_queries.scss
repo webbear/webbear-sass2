@@ -1,0 +1,11 @@
+@mixin responsive($width) {
+  @if $width == wide-screens {
+    @media (min-width: $width-large) { @content; }
+  }
+  @else if $width == medium-screens {
+    @media (max-width: $width-medium) { @content; }
+  }
+  @else if $width == small-screens {
+    @media (min-width: $width-small) { @content; }
+  }
+}

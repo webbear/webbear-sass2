@@ -1,42 +1,10 @@
-// responsive mixin
-// $width-small:  400px;
-// $width-medium: 760px;
-// $width-large:  1200px;
-
-@mixin responsive($width) {
-  @if $width == wide-screens {
-    @media (min-width: $width-large) { @content; }
-  }
-  @else if $width == medium-screens {
-    @media (max-width: $width-medium) { @content; }
-  }
-  @else if $width == small-screens {
-    @media (min-width: $width-small) { @content; }
-  }
-}
-
 @mixin box-sizing($value:border-box) {
 	-webkit-box-sizing: $value; // Safari/Chrome, other WebKit
-	-moz-box-sizing: $value;    // Firefox, other Gecko 
-	box-sizing: $value;         // Opera/IE 8+ 
-}
-// font-sizes
-@mixin font-size($sizeValue: 12){
-  font-size: $sizeValue + px;
-  font-size: ($sizeValue / 16) + rem;
+	-moz-box-sizing: $value;    // Firefox, other Gecko
+	box-sizing: $value;         // Opera/IE 8+
 }
 
-@mixin font-size10($sizeValue: 12) {
-    font-size: $sizeValue + px;
-    font-size: ($sizeValue / 10) + rem;
-}
-// print out the link url
-@mixin printLink($color:#999,$size:10pt){
-	content: "  ["attr(href)"] ";
-	color: $color;
-	font-size: $size;
-	text-decoration: none;
-}
+
 
 @mixin ie7-inline-block() {
     *display: inline;

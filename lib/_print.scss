@@ -1,0 +1,7 @@
+// print out the link url
+@mixin printLink($color:#999,$size:10pt){
+	content: "  ["attr(href)"] ";
+	color: $color;
+	font-size: $size;
+	text-decoration: none;
+}
