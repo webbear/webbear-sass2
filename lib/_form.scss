@@ -1,0 +1,17 @@
+@mixin textinput(	$border-color: #c4c4c4,
+					$padding:.25em .5em,
+					$display:inline-block,
+					$color: #000,
+					$font-size: 1em,
+					$box-sizing:border-box
+					) {
+	font-size:$font-size;
+	color: $color;
+	padding: $padding;
+	border: 1px solid $border-color;
+	@include display($display);
+	@include box-sizing($box-sizing);
+}
+@mixin appearance($value:none) {
+	-webkit-appearance: $value;
+}

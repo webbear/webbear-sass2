@@ -4,7 +4,9 @@
 	box-sizing: $value;         // Opera/IE 8+
 }
 
-
+@mixin display($value:inline-block) {
+	display: $value;
+}
 
 @mixin ie7-inline-block() {
     *display: inline;
