@@ -4,3 +4,14 @@
 nav ul {
 	list-style: none;
 }
+#MainContent {
+	.Image,
+	.Link,
+	.Download,
+	.Text {
+		margin:0 0 1em 0;
+	}
+	.Head {
+		margin: 1em 0 0 0;
+	}
+}
