@@ -3,9 +3,21 @@
     @media (min-width: $width-large) { @content; }
   }
   @else if $width == medium-screens {
+    @media (min-width: $width-medium) { @content; }
+  }
+  @else if $width == small-screens {
+    @media (max-width: $width-small) { @content; }
+  }
+}
+
+@mixin desktop-first($width) {
+  @if $width == wide-screens {
+    @media (max-width: $width-large) { @content; }
+  }
+  @else if $width == medium-screens {
     @media (max-width: $width-medium) { @content; }
   }
   @else if $width == small-screens {
-    @media (min-width: $width-small) { @content; }
+    @media (max-width: $width-small) { @content; }
   }
 }
