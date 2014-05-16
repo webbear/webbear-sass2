@@ -213,14 +213,22 @@
 	},
 "hooks": [
 	],
+<<<<<<< HEAD
 "lastSavedByUser": "Hans Jakob Bollinger",
+=======
+"lastSavedByUser": "Hans-Jakob Bollinger",
+>>>>>>> dbe140511047c6249676d2609622fb3517a4629c
 "manualImportLinks": {
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
 	"displayValue": "webbear",
 	"displayValueWasSetByUser": 0,
+<<<<<<< HEAD
 	"iconImageName": "harddrive_orange"
+=======
+	"iconImageName": "brackets_darkGray"
+>>>>>>> dbe140511047c6249676d2609622fb3517a4629c
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 0,

@@ -3,8 +3,15 @@
   font-size: $sizeValue + px;
   font-size: ($sizeValue / 16) + rem;
 }
-
+@mixin line-height($sizeValue: 18){
+  line-height: $sizeValue + px;
+  line-height: ($sizeValue / 16) + rem;
+}
 @mixin font-size10($sizeValue: 12) {
     font-size: $sizeValue + px;
     font-size: ($sizeValue / 10) + rem;
+}
+@mixin line-height10($sizeValue: 18) {
+    line-height: $sizeValue + px;
+    line-height: ($sizeValue / 10) + rem;
 }
