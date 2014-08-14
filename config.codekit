@@ -199,7 +199,7 @@
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/webbears-mixins.scss",
 		"outputAbbreviatedPath": "\/css\/webbears-mixins.css",
@@ -213,7 +213,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Hans Jakob Bollinger",
+"lastSavedByUser": "Hans-Jakob Bollinger",
 "manualImportLinks": {
 	},
 "projectAttributes": {
