@@ -1,8 +1,9 @@
 @mixin box-sizing($value:border-box) {
-	-webkit-box-sizing: $value; // Safari/Chrome, other WebKit
-	-moz-box-sizing: $value;    // Firefox, other Gecko
+	
 	box-sizing: $value;         // Opera/IE 8+
 }
+
+
 
 @mixin display($value:inline-block) {
 	display: $value;
@@ -32,13 +33,10 @@
 @mixin visuallyhidden (){ border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 
 @mixin border-radius( $radius: 3px ) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
+ 
   border-radius: $radius;
 }
 @mixin text-shadow($value:1px 1px 1px black) {
-	-webkit-text-shadow: $value;
-	-moz-text-shadow: $value;
 	text-shadow: $value;
 }
 
@@ -59,29 +57,24 @@
 }
 
  @mixin box-shadow($value : 2px 2px 5px 0 rgba(0,0,0,.6)) {
-  -webkit-box-shadow: $value;
-  -moz-box-shadow: $value;;
+
   box-shadow: $value;;
 }
 @mixin borderradiustopleft($radius:5px) {
-  -webkit-border-top-left-radius: $radius;
-  -moz-border-radius-topleft: $radius;
+ 
   border-top-left-radius: $radius;
 }
 
 @mixin borderradiustopright($radius: 5px) {
-  -webkit-border-top-right-radius: $radius;
-  -moz-border-radius-topright: $radius;
+
   border-top-right-radius: $radius;
 }
 @mixin borderradiusbottomright($radius: 5px) {
-  -webkit-border-bottom-right-radius: $radius;
-  -moz-border-radius-bottomright: $radius;
+
   border-bottom-right-radius: $radius;
 }
 @mixin borderradiusbottomleft($radius: 5px) {
-  -webkit-border-bottom-left-radius: $radius;
-  -moz-border-radius-bottomleft: $radius;
+
   border-bottom-left-radius: $radius;
 }
 
