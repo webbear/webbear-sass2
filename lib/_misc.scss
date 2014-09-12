@@ -60,20 +60,24 @@
 
   box-shadow: $value;;
 }
-@mixin borderradiustopleft($radius:5px) {
+@mixin border-bottom-radius($radius: 5px) {
+	@include border-radius-bottom-left($radius);
+	@include border-radius-bottom-right($radius);
+}
+@mixin border-radius-top-left($radius:5px) {
  
   border-top-left-radius: $radius;
 }
 
-@mixin borderradiustopright($radius: 5px) {
+@mixin border-radius-top-right($radius: 5px) {
 
   border-top-right-radius: $radius;
 }
-@mixin borderradiusbottomright($radius: 5px) {
+@mixin border-radius-bottom-right($radius: 5px) {
 
   border-bottom-right-radius: $radius;
 }
-@mixin borderradiusbottomleft($radius: 5px) {
+@mixin border-radius-bottom-left($radius: 5px) {
 
   border-bottom-left-radius: $radius;
 }
