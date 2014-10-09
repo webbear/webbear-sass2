@@ -1,9 +1,16 @@
 @mixin box-sizing($value:border-box) {
-	
+
 	box-sizing: $value;         // Opera/IE 8+
 }
 
-
+@mixin side-padding($right,$left:$right) {
+	padding-right: $right;
+	@if $left != $right {
+		padding-left: $left;
+	} @else {
+		padding-left: $left;
+	}
+}
 
 @mixin display($value:inline-block) {
 	display: $value;
@@ -33,7 +40,7 @@
 @mixin visuallyhidden (){ border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 
 @mixin border-radius( $radius: 3px ) {
- 
+
   border-radius: $radius;
 }
 @mixin text-shadow($value:1px 1px 1px black) {
@@ -65,7 +72,7 @@
 	@include border-radius-bottom-right($radius);
 }
 @mixin border-radius-top-left($radius:5px) {
- 
+
   border-top-left-radius: $radius;
 }
 
