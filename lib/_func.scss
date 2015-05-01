@@ -1,0 +1,7 @@
+@function unicode($str){
+	@return unquote("\"") + $str + unquote("\"");
+}
+
+@function unicode2($str){
+ @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+}
