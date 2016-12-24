@@ -3,5 +3,9 @@
 }
 
 @function unicode2($str){
- @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+ @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"");
+}
+
+@function px2rem($sizeValue) {
+  @return($sizeValue/ 16) + rem;
 }
