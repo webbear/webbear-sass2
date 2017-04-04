@@ -1,0 +1,56 @@
+$colors: (
+  primary: #010790,
+  secondary: #C7C8C8,
+  alert: #C8C7C7,
+  error: #C8C7C7,
+);
+
+$utility-color: #000 !default;
+$utility-bg-color: #C8C8C7 !default;
+
+$primary-color: map-get($colors, primary) !default;
+$secondary-color: map-get($colors, secondary) !default;
+
+
+$form-border-color: #B2D3FF !default;
+$form-input-padding: ".5rem .75rem";
+
+$base-font-family: "Helvetica", arial, sans-serif !default;
+
+
+$button-settings: (
+  background: $primary-color,
+  border: 1px solid $primary-color,
+  color: #fff,
+  border-radius: 0,
+  font-size: 100%,
+  font-weight: 400,
+  font-family: $base-font-family,
+) !default;
+
+
+$text-inputs-list: (
+  "[type='color']",
+  "[type='date']",
+  "[type='datetime']",
+  "[type='datetime-local']",
+  "[type='email']",
+  "[type='month']",
+  "[type='number']",
+  "[type='password']",
+  "[type='search']",
+  "[type='tel']",
+  "[type='text']",
+  "[type='time']",
+  "[type='url']",
+  "[type='week']",
+  "input:not([type])",
+  "textarea",
+);
+
+$buttons-list: (
+  "button",
+  "[type='button']",
+  "[type='reset']",
+  "[type='submit']",
+);

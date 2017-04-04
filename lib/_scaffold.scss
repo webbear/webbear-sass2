@@ -1,0 +1,45 @@
+
+ins {
+  background-color: $utility-bg-color;
+  color: $utility-color;
+  text-decoration: none;
+}
+
+
+mark {
+  background-color: $utility-bg-color;
+  color: $utility-color;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $utility-color;
+  margin: 1em 0;
+  padding: 0;
+}
+
+
+input[type=text],
+input[type=email],
+input[type=number],
+textarea {
+  border: 1px solid $form-border-color;
+  display: inline-block;
+  max-width: 100%;
+  padding: $form-input-padding;
+}
+

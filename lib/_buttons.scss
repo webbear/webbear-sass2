@@ -1,0 +1,36 @@
+@mixin _button() {
+  appearance: none;
+  background-color: map-get($buttons-setting, background);
+  border: map-get($buttons-setting, border);
+  border-radius: map-get($buttons-setting, border-radius);
+  color: map-get($buttons-setting, color);
+  cursor: pointer;
+  display: inline-block;
+  font-family: map-get($buttons-setting, font-family);
+  font-size: map-get($buttons-setting, font-size);
+  -webkit-font-smoothing: antialiased;
+  font-weight: map-get($buttons-setting, font-weight);
+  line-height: 1;
+  padding: .5rem .75rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 200ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    background-color: shade($primary-color, 20%);
+    color: #fff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+}
