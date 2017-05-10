@@ -4,21 +4,11 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "5B34D582-33A2-4D20-885E-510F9DB418BD"
+		"uuidString": "31AE8711-B0C4-4A30-97B8-DCF269E85428"
 		}
 	],
-"creatorBuild": "25704",
+"creatorBuild": "25813",
 "files": {
-	"\/css\/webbear.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/webbear-min.css",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/css\/webbear749global.css": {
 		"aP": 0,
 		"bl": 0,
@@ -309,8 +299,8 @@
 	},
 "projectAttributes": {
 	"creationDate": 499967742,
-	"displayValue": "webbear",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "webbear-sass",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "defaultFrameworkIcon"
 	},
 "projectSettings": {
@@ -1271,6 +1261,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -2095,14 +2089,6 @@
 		"orderOutput": 0,
 		"outputStyle": 1
 		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
-		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
@@ -2165,7 +2151,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"enableLossy": 1,
+		"optimizerType": 1,
 		"quality": 100
 		},
 	"languageDefaultsPUG": {
