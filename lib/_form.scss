@@ -14,5 +14,5 @@
 	@include box-sizing($box-sizing);
 }
 @mixin appearance($value:none) {
-	-webkit-appearance: $value;
+	appearance: $value;
 }
